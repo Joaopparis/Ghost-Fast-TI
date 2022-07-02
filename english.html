@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Ghost Fast TI</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="content/style.css">
+    <link rel="shortcut icon" href="content/img/logo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="nav_holder">
+            <nav>
+                <ul>
+                    <li id="nav_imgs">
+                        <a href="#" onclick="sideMenu()"><img src="content/img/menu.png" alt="info"></a>
+                        <a href="index.html"><img src="content/img/pt-br.png" alt="lang"></a>
+                    </li>
+                    <li class="nav_itens"><a href="#servicos">services</a></li>
+                    <li class="nav_itens"><a href="#" onclick="popupMaps()">location</a></li>
+                    <li class="nav_itens"><a href="https://github.com/Joaopparis" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id='slider'>
+            <div>
+                <img src="content/img/slide1.jpg" alt="slide1">
+                <img src="content/img/slide2.jpg" alt="slide2">
+                <img src="content/img/logo.png" alt="slide3">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="aboutUs">
+            <h3>About Us</h3>
+
+            <p>
+                The Ghost Fast TI is a website development company. With more than 12 years in the market, she has already developed websites for many customer service services, such as: Offices, studios and self-employed businesses 
+            </p>
+            <p>
+                currently, the creators have carried out research and studies, aiming to increase the expansion of their services to other branches, creating websites and security systems for laboratories and medical clinics.            </p>
+            <p>
+                “The health area has been intensifying more and more, and its specialists are looking for a company that can develop their websites and help their customers” - says João Pedro
+            </p>
+        </section>
+        
+        <section id="servicos" class="c-carousel__slides js-carousel--simple">
+            <div onclick="cardFunc(this, 'website creation', 'Web development with the main languages ​​on the market, html, css and javascript.')" class="cards" class="c-carousel__slide">
+                <h3>website creation</h3>
+            </div>
+
+            <div onclick="cardFunc(this, 'Systems Analysis', 'Analysis of use case and class, using UML language system.')" class="cards" class="c-carousel__slide">
+                <h3>Systems Analysis</h3>
+            </div>
+
+            <div onclick="cardFunc(this, 'management', 'State-of-the-art business management, focusing from the headquarters to the customer.')" class="cards" class="c-carousel__slide">
+                <h3>management</h3>
+            </div>
+
+            <div onclick="cardFunc(this, 'Hardware', ' Computer repair with personalized service and warranty.')" class="cards" class="c-carousel__slide">
+                <h3>Hardware</h3>
+            </div>
+
+            <div onclick="cardFunc(this, 'Windows forms', 'Development of windows forms with C#.')" class="cards" class="c-carousel__slide">
+                <h3>Windows forms</h3>
+            </div>
+
+            <div onclick="cardFunc(this, 'Operational systems', 'Comprehensive knowledge in the most diverse environments.')" class="cards" class="c-carousel__slide">
+                <h3>Operational systems</h3>
+            </div>
+
+            <div onclick="cardFunc(this, 'Architecture Networks', 'Network construction and optimization.')" class="cards" class="c-carousel__slide">
+                <h3>Architecture Networks</h3>
+            </div>
+
+            <div onclick="cardFunc(this, 'BackEnd', 'BackEnd Development with PHP, SQL, ASP.NET.')" class="cards" class="c-carousel__slide">
+                <h3>BackEnd</h3>
+            </div>
+
+            <div onclick="cardFunc(this, 'cybersecurity', 'Data protection and more comfort for you.')" class="cards" class="c-carousel__slide">
+                <h3>cybersecurity</h3>
+            </div>
+        </section>
+        
+        <footer>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+    
+            <p>&copy;2022, Ghost Fast TI - All Rights Reserved</p>
+        </footer>
+    </main>
+
+    <section id="info">
+        <div>
+            <span id="close">
+                <button onclick="ClosesideMenu()"><img src="content/img/fechar.png"></button>
+            </span>
+            <b>information:</b>
+            <span>Telephone: +11 4002-2469</span>
+            <br>
+            <ol>
+                <li>Av. Angélica, 563 - Santa Cecilia</li>
+                <li>Av. Jabaquara, 228 - Mirandópolis</li>
+                <li>Av. Zumkeller, 153 - Parque Mandaqui</li>
+            </ol>
+
+            <span id="SocialMedia">
+                <a target="_blank" href="https://www.facebook.com/ghostfastTI"><img src="content/img/face.png" id="face"></a>
+                <a target="_blank" href="https://www.instagram.com/ghost.fast.ti/"><img src="content/img/insta.png" id="insta"></a>
+            </span>
+            
+            <img src="content/img/logo.png">
+        </div>
+    </section>
+
+    <article>
+        <div>
+            <button onclick="closePopupMaps()"><img src="./content/img/fechar.png" alt="close"></button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d646.5553631391205!2d-46.64959214949449!3d-23.551577262394844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584a8a0b8cb1%3A0x3fb7436029bbf2ee!2sR.%20Augusta%2C%20415%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001305-000!5e0!3m2!1spt-BR!2sbr!4v1606778357499!5m2!1spt-BR!2sbr" frameborder="0" aria-hidden="false" id="maps"></iframe>
+        </div>
+    </article>
+
+    <script src="content/script.js"></script>
+</body>
+</html>
